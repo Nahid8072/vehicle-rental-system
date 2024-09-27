@@ -9,9 +9,9 @@ public class Main {
         //Creating RentalSystem object which is used to call the respective methods
         RentalSystem rentalSystem = new RentalSystem();
 
-        Vehicle car = new Vehicle("Toyota", "Supra", 2020, 100);
-        Vehicle motorbike = new Vehicle("Honda", "CXR", 2000, 50);
-        Vehicle truck = new Vehicle("Ford", "F150", 2001, 200);
+        Vehicle car = new Vehicle("Toyota", "Premio", 2020, 100);
+        Vehicle motorbike = new Vehicle("Honda", "XBlade", 2020, 50);
+        Vehicle truck = new Vehicle("Hino", "AK-1J", 2018, 200);
 
         rentalSystem.addVehicle(car);
         rentalSystem.addVehicle(motorbike);
@@ -34,7 +34,7 @@ public class Main {
             switch (choice) {
                 case 1: {
                     //Rent a vehicle
-                    System.out.print("Enter the vehicle make: ");
+                    System.out.print("Enter the vehicle Brand: ");
                     String make = scanner.nextLine();
                     System.out.print("Enter the vehicle model: ");
                     String model = scanner.nextLine();
@@ -68,7 +68,7 @@ public class Main {
 
                 case 2: {
                     //Return a vehicle
-                    System.out.println("Enter the vehicle make: ");
+                    System.out.println("Enter the vehicle Brand: ");
                     String make = scanner.nextLine();
                     System.out.println("Enter the vehicle model: ");
                     String model = scanner.nextLine();
